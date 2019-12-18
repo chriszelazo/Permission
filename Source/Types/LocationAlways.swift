@@ -51,7 +51,8 @@ extension Permission {
             Defaults.requestedLocationAlwaysWithWhenInUse = true
         }
 
-        LocationManager.request(self)
+        LocationManager = CLLocationManager()
+        LocationManager?.request(self)
     }
 }
 #endif
